@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+.desc p {
+  text-align: left;
+}
+.desc li {
+  text-align: left;
+}
+div.gallery {
+  border: 1px solid #ccc;
+  height: 710px;
+  overflow: scroll;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+.responsive {
+  padding: 0 6px 6px;
+  float: left;
+  width: 24.99999%;
+}
+#spacer {
+  visibility: hidden;
+}
+@media only screen and (max-width: 900px) {
+  .responsive {
+    width: 33.33333%;
+    margin: 6px 0;
+  }
+  #spacer {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  #spacer {
+    display: block;
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+  #spacer {
+    display: none;
+  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
